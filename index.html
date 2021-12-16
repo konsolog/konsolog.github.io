@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>TAIYANGSHAN</title>
+  </head>
+  <body>
+    <div id="menu">
+      <script>
+        function fade() {
+          var x = document.getElementById("aboutDiv");
+          if (x.style.display === "none") {
+            x.style.display = "flex";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
+      <a
+        id="about"
+        onclick="fade()">ABOUT</a>
+      <a class="submenu" id="work">WORK:</a>
+      <a id="fallenSun">FALLEN SUN</a>
+    </div>
+
+    <div class="container" id="aboutDiv">
+      <p style="white-space: pre-wrap; text-align: right" id="definitions">
+        <a class="word"><strong>【太阳】</strong></a>
+        <a class="pron">Tàiyáng</a>
+        The star around which the earth orbits.
+
+        <a class="word"><strong>【山】</strong></a>
+        <a class="pron">Shān</a>
+        A large natural elevation of the earth's surface rising abruptly from
+        the surrounding level; a large steep hill.
+      </p>
+    </div>
+    <!--<img src="./images/main.png" id="header" draggable="false"/>-->
+  </body>
+</html>
