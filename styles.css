@@ -82,10 +82,11 @@ html {
   cursor: pointer;
   animation-name: fadeIn;
   animation-duration: 1s;
+  font-size: 20px;
 }
 
 .submenu {
-  font-size: 14px;
+  font-size: 16px;
   color: #9a9a9a;
 }
 
@@ -97,16 +98,17 @@ html {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   margin-right: 20px;
+  font-size: 35px;
 }
 
 #definitions .pron {
-  font-size: 18px;
+  font-size: 25px;
   color: rgb(209, 209, 209);
   font-weight: 100;
 }
 
 #definitions .word {
-  font-size: 40px;
+  font-size: 80px;
   color: #fff;
 }
 
