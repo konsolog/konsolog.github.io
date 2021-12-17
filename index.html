@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="site-name" content="TAIYANGSHAN">
+    <meta property="description" content="Taiyangshan's Official site" />
+    <meta name="image" itemprop="image" content="./images/main.png">
+    <meta property="type" content="website">
+    <meta name="theme-color" itemprop="color" content="#00001C" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <title>TAIYANGSHAN</title>
@@ -20,11 +27,25 @@
           }
         }
       </script>
+
+      <script>
+            function fade2() {
+                var x = document.getElementById("fallenSunDiv");
+                if (x.style.display === "flex") {
+                x.style.display = "none";
+                document.html.style.backgroundImage = "url('./images/fallenSun.png')";
+                } else {
+                x.style.display = "flex";
+                document.html.style.backgroundImage = "url('./images/fallenSun.png')";
+                }
+            }
+      </script>
+
       <a
         id="about"
         onclick="fade()">ABOUT</a>
       <a class="submenu" id="work">WORK:</a>
-      <a id="fallenSun">FALLEN SUN</a>
+      <a id="fallenSun" onclick="fade2()">FALLEN SUN</a>
     </div>
 
     <div class="container" id="aboutDiv">
@@ -38,6 +59,15 @@
         A large natural elevation of the earth's surface rising abruptly from
         the surrounding level; a large steep hill.
       </p>
+    </div>
+
+    <div class="container" id="fallenSunDiv">
+        <p style="white-space: pre-wrap; text-align: center" id="description">
+            <a>DO NOT FEAR THE UNKNOWN</a>
+            <strong>COMING SOON</strong>
+            FIGHT YOUR WAY THROUGH A WORLD FILLED WITH DEMONS FROM AN UNKNOWN ORIGIN.
+            AS YOU CONTROL THESE BRAVE JAPANESE WARRIORS, SHALL THE GLORY OF THE SUN RISE AGAIN.
+        </p>
     </div>
     <!--<img src="./images/main.png" id="header" draggable="false"/>-->
   </body>
