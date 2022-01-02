@@ -1,3 +1,16 @@
+@keyframes pulse {
+  /*Pulsating filter: drop-shadow*/
+  0% {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.5));
+  }
+}
+
 body {
     background: rgb(5,0,89);
 background: radial-gradient(circle, rgba(5,0,82,1) 0%, rgba(0,0,17,1) 100%);
@@ -20,6 +33,10 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 0.25rem #fff);
+  animation-name: pulse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 #line {
@@ -28,4 +45,5 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+   filter: drop-shadow(0 0 1rem #fff);
 }
