@@ -16,6 +16,7 @@ body {
 background: radial-gradient(circle, rgba(5,0,82,1) 0%, rgba(0,0,17,1) 100%);
 background-repeat: none;
 overflow: hidden;
+overflow-x: hidden;
 }
 
 html {
